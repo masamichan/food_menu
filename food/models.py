@@ -12,3 +12,4 @@ class Item(models.Model):
   item_name = models.CharField(max_length=200)
   item_desc = models.CharField(max_length=200)
   item_price = models.IntegerField()
+  item_image = models.CharField(max_length=500, default="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5nJ-946STbB6QZQbKiW60QJI3ajOjE43Qg&s.png")

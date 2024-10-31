@@ -22,7 +22,8 @@
         <h6>$ {{ item.item_price }}</h6>
       </div>
       <div class="col-md-2">
-
+          <a href="{% url 'food:detail' item.id %}" class="btn btn-success">Detail</a>
+            
       </div>
     </div>
 
@@ -33,8 +34,6 @@
 
     <ul>
       <li>
-        <a href="{% url 'food:detail' item.id %}"> {{item.id}} -- {{item.item_name}}
-      </li>
     </ul>
 </body>
 </html>

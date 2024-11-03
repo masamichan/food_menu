@@ -21,9 +21,20 @@
         <h5>{{ item.item_desc }}</h5>
         <h6>$ {{ item.item_price }}</h6>
       </div>
-      <div class="col-md-2">
-          <a href="{% url 'food:detail' item.id %}" class="btn btn-success">Detail</a>
-            
+      <div class="container overflow-hidden text-center">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3">
+              <button type="button" class="btn btn-outline-primary"><a href="{% url 'food:detail' item.id %}">Detail</a></button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <button type="button" class="btn btn-outline-warning"><a class="nav-link" href="{ % url 'food:delete_item' item.id % }">Delete Item</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
